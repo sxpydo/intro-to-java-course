@@ -48,7 +48,7 @@ public class StringExercises {
 
      public static void main(String[] args) {
         // Input string
-        String str = "geeks";
+        String str = "anna";
 
         //Convert the string to lowercase
         str = str.toLowerCase();
@@ -56,11 +56,11 @@ public class StringExercises {
         if (isPalindrome(str))
 
             // It is a palindrome
-            System.out.print("Yes");
+            System.out.print(true);
         else
 
             // Not a palindrome
-            System.out.print("No");
+            System.out.print(false);
     }
 
 }
