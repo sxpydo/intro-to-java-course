@@ -10,10 +10,17 @@ public class StringExercises {
 
     public Long howMany(String text, Character character) {
         // Write code to determine how many of the input ${character} are contained in the input ${text}
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+
+        long count = 0;
+        for(int i = 0; i < text.length(); i++) {
+            if(text.charAt(i) == character)
+                count++;
+        }
+        return count;
     }
 
-    public static Boolean isPalindrome(String word) {
+    public Boolean isPalindrome(String word) {
         // Write code to determine whether the input ${word} is a palindrome
         
         
@@ -37,32 +44,11 @@ public class StringExercises {
         // Given string is a palindrome
         return true;
     }
-        
 
-
+    
     public String getName() {
         return "String Exercises";
     }
 
 
-
-     public static void main(String[] args) {
-        // Input string
-        String str = "anna";
-
-        //Convert the string to lowercase
-        str = str.toLowerCase();
-        // passing boolean function till holding true
-        if (isPalindrome(str))
-
-            // It is a palindrome
-            System.out.print(true);
-        else
-
-            // Not a palindrome
-            System.out.print(false);
-    }
-
 }
-
-
