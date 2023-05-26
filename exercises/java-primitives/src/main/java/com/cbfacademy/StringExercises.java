@@ -4,7 +4,6 @@ public class StringExercises {
 
     public String fromCharacters(char[] characters) {
         // Write code that creates a String from the input array of characters
-        //throw new RuntimeException("Not implemented");
 
         String word = new String(characters);
         return word;
@@ -12,7 +11,6 @@ public class StringExercises {
 
     public Long howMany(String text, Character character) {
         // Write code to determine how many of the input ${character} are contained in the input ${text}
-        //throw new RuntimeException("Not implemented");
 
         long count = 0;
         for(int i = 0; i < text.length(); i++) {
@@ -24,7 +22,6 @@ public class StringExercises {
 
     public Boolean isPalindrome(String word) {
         // Write code to determine whether the input ${word} is a palindrome
-        
         
         // Pointers pointing to the beginning
         // and the end of the string
