@@ -32,18 +32,33 @@ public class CollectionsExercises {
     }
 
     public Stack<Integer> useStack() {
-        // TODO: create an empty stack
+        // create an empty stack
+        Stack<Integer> integersStack = new Stack<>();
+
         //  - add 5, 6, 8, 9 to the the stack
+        integersStack.add(5);
+        integersStack.add(6);
+        integersStack.add(8);
+        integersStack.add(9);
+
         //  - print the first element of the stack on the screen
+        System.out.print(integersStack.firstElement());
+
         //  - print the last element of the stack on the screen
+        System.out.print(integersStack.lastElement());
+
         //  - invoke the method pop() on the stack and print the result on the screen
+        System.out.print(integersStack.pop());
+
         //  - invoke the push(4) method on the stack
+        integersStack.push(4);
+
         //  - return the stack
-        throw new RuntimeException("Not implemented");
+        return integersStack;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
-        // TODO: create an empty arrayDeque
+        // create an empty arrayDeque
         //  - add 5, 6, 8, 9 to the the stack
         //  - print the first element of the queue on the screen
         //  - print the last element of the queue on the screen
@@ -54,7 +69,7 @@ public class CollectionsExercises {
     }
 
     public HashMap<Integer, String> useHashMap() {
-        // TODO: create an empty hash map
+        // create an empty hash map
         //  - add {1, TypeScript} entry to the map
         //  - add {2, Kotlin} entry to the map
         //  - add {3, Python} entry to the map
