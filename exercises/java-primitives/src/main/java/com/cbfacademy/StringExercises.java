@@ -6,9 +6,8 @@ public class StringExercises {
         // Write code that creates a String from the input array of characters
         //throw new RuntimeException("Not implemented");
 
-        String outputString = new String(characters);
-            //System.out.println(outputString);
-            return(outputString);
+        String word = new String(characters);
+        return word;
     }
 
     public Long howMany(String text, Character character) {
