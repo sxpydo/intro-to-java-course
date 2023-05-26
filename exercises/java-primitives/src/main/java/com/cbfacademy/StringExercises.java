@@ -4,8 +4,11 @@ public class StringExercises {
 
     public String fromCharacters(char[] characters) {
         // Write code that creates a String from the input array of characters
-        
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+
+        String outputString = new String(characters);
+            //System.out.println(outputString);
+            return(outputString);
     }
 
     public Long howMany(String text, Character character) {
