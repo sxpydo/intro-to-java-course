@@ -5,7 +5,7 @@ public class Operators {
 
         // Arithmetic Operations
         // Following our example of arithmetic operations on integers, create a simple Java program with simple expressions for both float and double types
-        
+        // can convert the types to double too
         float number1 = 12.2f;
         float number2 = 45.5f;
     
