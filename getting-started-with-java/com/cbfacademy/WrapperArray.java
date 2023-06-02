@@ -6,13 +6,31 @@ public class WrapperArray {
         int[] int_elements = {7, 4, 9, 3, 007, 266, 21, 45};
         System.out.println(int_elements.length);
 
-        float[] ft_elements = {10.0f, 7.4f, 23.5f, 0.9f, 5.0f, 9.0f, 10.9f, 2.3f, 1.2f, 0.07f, 45.7f, 5.678f};
-        System.out.println(ft_elements.length);
+           // Create an array to hold 12 float elements
+           float[] floatArray = new float[12];
+
+           // Initialize the array with float values
+           for (int i = 0; i < floatArray.length; i++) {
+               floatArray[i] = (float) (i + 1) * 1.2f;
+           }
+   
+           // Print the elements of the float array
+           for (float element : floatArray) {
+               System.out.println(element);
 
         //float[] floatArray = new float[5];
+
+        double[] db_elements = {2.4d, 45.7d, 9.0d, 1.2d, 0.75d};
+        System.out.println(db_elements.length);
+
+        // double[] db_elements = {2.4d, 45.7d, 9.0d, 1.2d, 0.75d};
+        // System.out.println(db_elements.length);
+
 
 
     
     }
     
+}
+
 }
