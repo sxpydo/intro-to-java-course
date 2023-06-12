@@ -77,7 +77,15 @@ public class FlowControlExercises {
     public List<Integer> reverse(ArrayList<Integer> numbers) {
         // Implement this method such that
         //  - it takes an array list of integers
-        throw new RuntimeException("Not implemented");
+        ArrayList<Integer> numbersReverse = new ArrayList<>();
+        int numbersLength = numbers.size();
+
+            for (int i = 0; i < numbersLength; i++) {
+                numbersReverse.add(numbers.get(numbersLength - 1 - i));
+            }
+
+        //  - it returns the list in reverse order
+        return numbersReverse;
     }
 
     public String getName() {
