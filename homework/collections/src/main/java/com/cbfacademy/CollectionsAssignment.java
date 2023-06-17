@@ -14,11 +14,11 @@ public class CollectionsAssignment {
      * @param minValue the minimum value to retain
      */
     public static void removeSmallInts(List<Integer> list, int minValue) {
-        // Your solution must traverse the list from last to first element
-        // removing any values less than minValue.
-        list.removeIf(i -> (i < minValue));
-
-    }
+            // Your solution must traverse the list from last to first element
+            // removing any values less than minValue.
+            list.removeIf(x -> (x < minValue));
+        
+        }
 
     /**
      * This method returns true if the provided collection contains any
@@ -29,13 +29,14 @@ public class CollectionsAssignment {
      */
     public static boolean containsDuplicates(Collection<Integer> integers) {
         // Your solution must not use any loops.
-         HashSet<Integer> integersSet = new HashSet<>(integers);
+        // create set from given collection
+        HashSet<Integer> integersSet = new HashSet<>(integers);
         
         // sets cannot contain duplicates, so turning to set will remove duplicates
         if (integers.size() != integersSet.size()) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 
@@ -59,7 +60,7 @@ public class CollectionsAssignment {
         Set<Integer> ints1Set = new HashSet<>(ints1);
         Set<Integer> ints2Set = new HashSet<>(ints2);
 
-        ints1Set.addAll(ints2Set);
+       ints1Set.addAll(ints2Set);
 
         return new ArrayList<Integer>(ints1Set);
     }
@@ -113,7 +114,7 @@ public class CollectionsAssignment {
 
         ArrayList<Integer> mapValues = new ArrayList<>(stringCount.values());
 
-         Integer maxValue = Collections.max(mapValues);
+        Integer maxValue = Collections.max(mapValues);
 
         for (String s : list) {
             if (stringCount.get(s) == maxValue) {
