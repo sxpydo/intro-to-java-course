@@ -34,9 +34,9 @@ public class CollectionsAssignment {
         
         // sets cannot contain duplicates, so turning to set will remove duplicates
         if (integers.size() != integersSet.size()) {
-            return false;
-        } else {
             return true;
+        } else {
+            return false;
         }
     }
 
