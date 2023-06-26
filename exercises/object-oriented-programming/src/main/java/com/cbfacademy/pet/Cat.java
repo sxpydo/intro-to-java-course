@@ -51,12 +51,14 @@ public class Cat {
 
 
      public static void main(String[] args){
-        Cat Abbi = new Cat("Calico", 8.5, 10, "Calico colours");
+        Cat Abbi = new Cat("Calico", 8.5, 10, "Ginger, White, Tortoiseshell");
         Cat Ginger = new Cat("Ginger", 13, 7, "Orange");
+        Cat Bobby = new Cat("Chonker", 25.3, 4, "Black and white");
 
 
         System.out.println(Abbi.getDetails());
         System.out.println(Ginger.eat());
+        System.out.println(Bobby.sleep());
 
     }
 
