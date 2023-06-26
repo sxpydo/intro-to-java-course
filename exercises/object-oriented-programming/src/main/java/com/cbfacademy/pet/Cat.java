@@ -1,4 +1,4 @@
-package com.cbfacademy.cat;
+package com.cbfacademy.pet;
 
 
 public class Cat {
