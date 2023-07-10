@@ -1,15 +1,24 @@
 package com.cbfacademy.accounts;
 
-public class Bank {
-      public static void main(String[] args) {
-        Account[] accounts = new Account[2];
-        accounts[0] = new SavingsAccount(2, 0, 0.25);
-        accounts[1] = new CurrentAccount(23, 50);
+import java.util.List;
 
-        for(int i=0; i<accounts.length;i++) {
-            Object SavingsAccount;
-            if (accounts[0].equals(SavingsAccount)
-                System.out.println(accounts[0].getInterest());
-        }
-    
+public class Bank {
+  private List<Account> accounts;
+
+  public Bank(List<Account> accounts) {
+    this.accounts = accounts;
+  }
+
+  public void update() {
+    for (Account account : accounts) {
+      if(account instanceof CurrentAccount){
+        var currentAccount = (CurrentAccount)account;
+        if(Double.compare(currentAccount.getLimit(), currentAccount.getBalance()) < 0){
+          currentAccount.sendLetter();
+      }
+      if(account instanceof SavingsAccount){
+        var savingsAccount = (SavingsAccount)account;
+        savingsAccount.addInterest(0);
+    }
+  }
 }

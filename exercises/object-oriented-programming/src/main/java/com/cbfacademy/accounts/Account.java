@@ -18,11 +18,12 @@ public class Account {
        this.balance -= amount;
     }
 
-    public String getBalance() {
-        return "The account balance for " + this.accountNumber + " is currently £ " + this.balance;
+    public int getAccountNumber() {
+       return this.accountNumber;
     }
 
-    
-
+    public double getBalance() {
+        return this.balance;
+    }
     
 }

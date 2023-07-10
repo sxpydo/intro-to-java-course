@@ -1,10 +1,10 @@
 package com.cbfacademy.accounts;
 
-public class SavingsAcount extends Account {
+public class SavingsAccount extends Account {
 
     private double interest;
 
-    public SavingsAcount(double balance, int accountNumber, double interest) {
+    public SavingsAccount(double balance, int accountNumber, double interest) {
         super(balance, accountNumber);
         this.interest = interest;
 
