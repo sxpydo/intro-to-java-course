@@ -14,11 +14,13 @@ public class Bank {
       if(account instanceof CurrentAccount){
         var currentAccount = (CurrentAccount)account;
         if(Double.compare(currentAccount.getLimit(), currentAccount.getBalance()) < 0){
-          currentAccount.sendLetter();
+          currentAccount.sendLetter(); }
       }
+
       if(account instanceof SavingsAccount){
         var savingsAccount = (SavingsAccount)account;
         savingsAccount.addInterest(0);
+      }
     }
   }
 }
