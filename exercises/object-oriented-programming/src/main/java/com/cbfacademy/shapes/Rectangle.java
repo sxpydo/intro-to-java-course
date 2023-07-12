@@ -2,8 +2,8 @@ package com.cbfacademy.shapes;
 
 public class Rectangle extends Shape {
 
-    double length;
-    double width;
+    private double length;
+    private double width;
     
      public Rectangle(String shapeName, double length, double width) {
         super(shapeName);
