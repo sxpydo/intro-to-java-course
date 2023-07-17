@@ -24,6 +24,8 @@ try {
 }
 ```
 
+* Yes, it's legal — and very useful A try statement does not have to have a catch block if it has a finally block. If the code in the try statement has multiple exit points and no associated catch clauses, the code in the finally block is executed no matter how the try block is exited. Thus it makes sense to provide a finally block whenever there is code that must always be executed. This include resource recovery code, such as the code to close I/O streams.
+
 ### <ins>Question 2</ins>
 
 What exception types can be caught by the following handler?
@@ -34,6 +36,8 @@ catch (Exception e) {
 ```
 
 What is wrong with using this type of exception handler?
+* This handler catches exceptions of type Exception; therefore, it catches any exception. This can be a poor implementation because you are losing valuable information about the type of exception being thrown and making your code less efficient. As a result, your program may be forced to determine the type of exception before it can decide on the best recovery strategy.
+
 
 ### <ins>Question 3</ins>
 
@@ -49,6 +53,9 @@ try {
 }
 ```
 
+* This first handler catches exceptions of type Exception; therefore, it catches any exception, including ArithmeticException. The second handler could never be reached. This code will not compile.
+
+
 ### <ins>Question 4</ins>
 
 ```java
@@ -61,7 +68,7 @@ The above code produces (choose 1):
 - [ ] an error
 - [ ] a checked exception
 - [ ] a checked exception
-- [ ] a compile error
+- [ x ] a compile error - The array is not initialised and will not compile
 - [ ] no exception
 
 ---
@@ -71,7 +78,7 @@ The JVM starts running your program, but the JVM can't find the Java platform cl
 
 What happens (choose 1):
 
-- [ ] an error
+- [ x ] an error
 - [ ] a checked exception
 - [ ] a checked exception
 - [ ] a compile error
@@ -86,7 +93,7 @@ What happens (choose 1):
 - [ ] a checked exception
 - [ ] a checked exception
 - [ ] a compile error
-- [ ] no exception
+- [ x ] no exception - When you read a stream, you expect there to be an end of stream marker. You should use exceptions to cathc behaviour in your program.
 
 ---
 
@@ -95,7 +102,7 @@ Before closing the stream and after reaching the end of stream marker, a program
 What happens (choose 1):
 
 - [ ] an error
-- [ ] a checked exception
+- [ x ] a checked exception
 - [ ] a checked exception
 - [ ] a compile error
 - [ ] no exception
