@@ -12,17 +12,40 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz.run(), is("1"));
     }
 
-     @Test
+    @Test
     public void shouldReturnNumber2() {
         FizzBuzz fizzBuzz = new FizzBuzz(2);
         assertThat(fizzBuzz.run(), is("2"));
     }
 
-
     @Test
-    public void multiplesOf3() {
+    public void shouldReturnFizzWhen3() {
         FizzBuzz fizzBuzz = new FizzBuzz(3);
         assertThat(fizzBuzz.run(), is("Fizz"));
+    }
+
+    @Test
+    public void shouldReturnFizzWhen6() {
+        FizzBuzz fizzBuzz = new FizzBuzz(6);
+        assertThat(fizzBuzz.run(), is("Fizz"));
+    }
+
+    @Test
+    public void shouldReturnBuzzWhen5() {
+        FizzBuzz fizzBuzz = new FizzBuzz(5);
+        assertThat(fizzBuzz.run(), is("Buzz"));
+    }
+
+    @Test
+    public void shouldReturnBuzzWhen10() {
+        FizzBuzz fizzBuzz = new FizzBuzz(10);
+        assertThat(fizzBuzz.run(), is("Buzz"));
+    }
+
+     @Test
+    public void shouldReturnFizzBuzzWhen15() {
+        FizzBuzz fizzBuzz = new FizzBuzz(15);
+        assertThat(fizzBuzz.run(), is("FizzBuzz"));
     }
 
 
