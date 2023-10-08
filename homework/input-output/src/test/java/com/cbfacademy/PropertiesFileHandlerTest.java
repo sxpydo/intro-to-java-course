@@ -21,7 +21,7 @@ public class PropertiesFileHandlerTest {
     @Test
     @DisplayName(value = "test loadProperties() returns data filled properties object when given the correct file path")
     public void loadProperties_ReturnsExpectedResult() {
-        Properties result = PropertiesFileHandler.loadProperties("src/test/resources/test_file.properties");
+        Properties result = PropertiesFileHandler.loadProperties("src/test/java/com/cbfacademy/resources/test_file.properties");
 
         assertTrue(result.size() > 0);
     }
@@ -63,7 +63,7 @@ public class PropertiesFileHandlerTest {
     @Test
     @DisplayName(value = "test createFile() creates a new file at the given file path")
     public void createFile_CreatesNewPropertiesFileAtTheGivenPath() throws IOException {
-        String filePath = "src/test/resources/test_file.properties";
+        String filePath = "src/test/java/com/cbfacademy/resources/test_file.properties";
 
         try {
             PropertiesFileHandler.createFile(propMap, filePath);
