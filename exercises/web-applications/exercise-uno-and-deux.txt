@@ -11,3 +11,9 @@ the client in the HTTP Request?
     - Finding compatiblity issues
     - Benefits troubleshooting
     - Optimise web content based on User Agent information
+
+
+Exercise 2
+Using this website at guidance: https://http.cat/
+1. 200 - OK
+2. 404 - NOT FOUND
